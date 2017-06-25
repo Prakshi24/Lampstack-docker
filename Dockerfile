@@ -33,7 +33,7 @@ COPY index.html /var/www/html
 ENV PHP_UPLOAD_MAX_FILESIZE 10M
 ENV PHP_POST_MAX_SIZE 10M
 
-# Add volumes for MySQL 
+# Add volumes for MySQL (This step is optional)
 VOLUME  ["/etc/mysql", "/var/lib/mysql" ]
 
 EXPOSE 80 3306
